@@ -72,6 +72,7 @@ public class SpawnManager : MonoBehaviour
         if (animalController)
         {
             animalController.SetFoodPreference(foodPreferences[Random.Range(0, foodPreferences.Length)]);
+            animalController.screenBounds = screenBounds;
         }
 
     }

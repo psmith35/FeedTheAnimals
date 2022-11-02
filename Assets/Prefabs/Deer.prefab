@@ -274,7 +274,7 @@ PrefabInstance:
     - target: {fileID: 493214852422247036, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.01818183
       objectReference: {fileID: 0}
     - target: {fileID: 493214852422247036, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
@@ -330,6 +330,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.00818182
+      objectReference: {fileID: 0}
+    - target: {fileID: 493214852422247038, guid: 69accdacbaa09024c88b663bc90f9fa0,
+        type: 3}
+      propertyPath: m_DynamicPixelsPerUnit
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 493214852422247039, guid: 69accdacbaa09024c88b663bc90f9fa0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 493214852633182441, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}

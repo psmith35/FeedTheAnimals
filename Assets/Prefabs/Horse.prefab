@@ -1584,6 +1584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 493214852422247033, guid: 69accdacbaa09024c88b663bc90f9fa0,
+        type: 3}
+      propertyPath: m_BlockingObjects
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 493214852422247036, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1647,17 +1652,17 @@ PrefabInstance:
     - target: {fileID: 493214852422247036, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 493214852422247036, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 493214852422247036, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 300
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 493214852422247036, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
@@ -1703,6 +1708,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 493214852422247038, guid: 69accdacbaa09024c88b663bc90f9fa0,
+        type: 3}
+      propertyPath: m_DynamicPixelsPerUnit
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 493214852422247039, guid: 69accdacbaa09024c88b663bc90f9fa0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 493214852633182441, guid: 69accdacbaa09024c88b663bc90f9fa0,
         type: 3}
