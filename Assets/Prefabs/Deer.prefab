@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2088884230884379094}
   - component: {fileID: 2088884230876570074}
-  - component: {fileID: 8779198795004816860}
   - component: {fileID: 750538474737011841}
   m_Layer: 0
   m_Name: Deer
@@ -54,19 +53,6 @@ Animator:
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8779198795004816860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088884230884150108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff5da7a4b05f68f49bb31e9f35601277, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!54 &750538474737011841
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -194,8 +180,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodPreference: {fileID: 0}
   fullness: 0
+  targetPosition: {x: 0, y: 0, z: 0}
   hungerLevel: 2
   pointValue: 100
+  speed: 3
   healthSlider: {fileID: 5350082479951644527}
   foodImage: {fileID: 1543786170988941116}
   backgroundImage: {fileID: 5350082478485145809}

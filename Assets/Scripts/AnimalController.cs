@@ -5,11 +5,12 @@ public class AnimalController : MonoBehaviour
 {
     [HideInInspector] public Food foodPreference;
     [HideInInspector] public int fullness = 0;
-    [HideInInspector] public Vector3 screenBounds;
+    [HideInInspector] public Vector3 targetPosition;
 
     [Header("Customization")]
     public int hungerLevel = 1;
     public int pointValue = 100;
+    public float speed;
 
     [Header("UI")]
     public Slider healthSlider;
@@ -19,7 +20,6 @@ public class AnimalController : MonoBehaviour
     private Color angryColor = new Color(0.925f, 0.0392f, 0.0f, 1.0f);
 
     bool inPlay = false;
-    Renderer animalRenderer;
     Image fillImage;
 
     public int Fullness
@@ -43,7 +43,6 @@ public class AnimalController : MonoBehaviour
 
     void Start()
     {
-        animalRenderer = GetComponent<SkinnedMeshRenderer>();
         fillImage = healthSlider.fillRect.GetComponent<Image>();
         healthSlider.GetComponentInParent<Canvas>().worldCamera = Camera.main;
 
@@ -55,10 +54,10 @@ public class AnimalController : MonoBehaviour
 
     void Update()
     {
-        if (inPlay && (transform.position.x < -screenBounds.x || 
-            transform.position.x > screenBounds.x || 
-            transform.position.z > screenBounds.z || 
-            transform.position.z < -screenBounds.z))
+        var step = speed * Time.deltaTime;
+        transform.root.position = Vector3.MoveTowards(transform.root.position, targetPosition, step);
+
+        if (inPlay && transform.root.position == targetPosition)
         {
             FindObjectOfType<PlayerController>()?.LoseHealth();
             Destroy(transform.root.gameObject);

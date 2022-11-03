@@ -134,7 +134,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7163911866215876098}
   - component: {fileID: 7163911866225724480}
-  - component: {fileID: 9173655999755904040}
   - component: {fileID: 8498831838630448650}
   m_Layer: 0
   m_Name: Cow
@@ -178,19 +177,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9173655999755904040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7163911866216098496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff5da7a4b05f68f49bb31e9f35601277, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
 --- !u!54 &8498831838630448650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1543,8 +1529,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodPreference: {fileID: 0}
   fullness: 0
+  targetPosition: {x: 0, y: 0, z: 0}
   hungerLevel: 4
   pointValue: 200
+  speed: 1.5
   healthSlider: {fileID: 2903323443841010598}
   foodImage: {fileID: 8581965016449598453}
   backgroundImage: {fileID: 2903323444535624728}

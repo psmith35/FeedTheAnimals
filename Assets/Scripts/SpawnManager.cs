@@ -2,8 +2,8 @@
 
 public class SpawnManager : MonoBehaviour
 {
-    public enum ScreenSide { Left, Right, Top, Bottom 
-    }
+    public enum ScreenSide { Left, Right, Top, Bottom }
+
     [Header("Animals")]
     public GameObject[] animalPrefabs;
     public Food[] foodPreferences;
@@ -44,24 +44,29 @@ public class SpawnManager : MonoBehaviour
         float spawnZ = animalSize.z * 2;
 
         Vector3 position = Vector3.zero;
+        Vector3 targetPosition = Vector3.zero;
         Quaternion rotation = Quaternion.identity;
 
         switch(side)
         {
             case ScreenSide.Left:
                 position = new Vector3(-screenBounds.x - spawnZ, 0, Random.Range(-screenBounds.z + spawnX, screenBounds.z - spawnX));
+                targetPosition = Vector3.Reflect(position, Vector3.right);
                 rotation = Quaternion.Euler(0, 90, 0);
                 break;
             case ScreenSide.Right:
                 position = new Vector3(screenBounds.x + spawnZ, 0, Random.Range(-screenBounds.z + spawnX, screenBounds.z - spawnX));
+                targetPosition = Vector3.Reflect(position, Vector3.left);
                 rotation = Quaternion.Euler(0, -90, 0);
                 break;
             case ScreenSide.Top:
                 position = new Vector3(Random.Range(-screenBounds.x + spawnX, screenBounds.x - spawnX), 0, screenBounds.z + spawnZ);
+                targetPosition = Vector3.Reflect(position, Vector3.forward);
                 rotation = Quaternion.Euler(0, 180, 0);
                 break;
             case ScreenSide.Bottom:
                 position = new Vector3(Random.Range(-screenBounds.x + spawnX, screenBounds.x - spawnX), 0, -screenBounds.z - spawnZ);
+                targetPosition = Vector3.Reflect(position, Vector3.back);
                 rotation = Quaternion.Euler(0, 0, 0);
                 break;
         }
@@ -72,7 +77,7 @@ public class SpawnManager : MonoBehaviour
         if (animalController)
         {
             animalController.SetFoodPreference(foodPreferences[Random.Range(0, foodPreferences.Length)]);
-            animalController.screenBounds = screenBounds;
+            animalController.targetPosition = targetPosition;
         }
 
     }
