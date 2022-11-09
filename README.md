@@ -1,7 +1,7 @@
 
 # Feed The Animals
 
-Feed The Animals is a fun 1-player video game that requires players to earn points by throwing different types and amounts of food at a variety of animals based on their food preferences. I demonstrated proficiency in C#, Unity, and Git in this project.
+Feed The Animals is a fun 1-player video game that requires players to earn points by throwing different types and amounts of food at a variety of animals based on their food preferences.
 
 ## Features
 
