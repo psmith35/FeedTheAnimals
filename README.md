@@ -20,9 +20,17 @@ Feed The Animals is a fun 1-player video game that requires players to earn poin
 
 ## Controls
 
-- Use the directional keys to move the player. (The player can not move beyond the screen.)
+- Use the directional keys to move the player.
 - Press the 1, 2, or 3 key or one of the buttons in the bottom-left corner of the screen to fire a piece of food.
 - Press Enter to restart the game when the current game ends.
+
+## Rules
+
+- The player can not move beyond the screen.
+- Feeding the right food to an animal fills their food meter. 
+- Feeding the wrong food depletes it.
+- Animals are fully fed when their food meter fills completely, which then increases the player's score based on the type of animal that got fed.
+- Players lose health when an animal collides with the player or walks off-screen without getting fully fed.
 
 ## Demo
 
