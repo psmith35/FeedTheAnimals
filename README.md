@@ -9,7 +9,7 @@ Feed The Animals is a fun 1-player video game that requires players to earn poin
 - Animal Spawning and Moving
 - Randomized Food Preferences for Animals
 - Scoring Points
-- Losing Health
+- Losing Lives
 - Game Over Screen
 
 ## Tech Stack
@@ -30,8 +30,8 @@ Feed The Animals is a fun 1-player video game that requires players to earn poin
 - Feeding the right food to an animal fills their food meter. 
 - Feeding the wrong food depletes it.
 - Animals are fully fed when their food meter fills completely, which then increases the player's score based on the type of animal that got fed.
-- Players lose health when an animal collides with the player or walks off-screen without getting fully fed.
-- The game ends when a player loses all of their health.
+- Players lose a life when an animal collides with the player or walks off-screen without getting fully fed.
+- The game ends when a player loses all of their lives.
 
 ## Demo
 
