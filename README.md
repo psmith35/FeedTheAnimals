@@ -21,7 +21,7 @@ Feed The Animals is a fun 1-player video game that requires players to earn poin
 ## Controls
 
 - Use the directional keys to move the player.
-- Press 1, 2, or 3 to fire a piece of food.
+- Press the 1, 2, or 3 key or one of the buttons in the bottom-left corner of the screen to fire a piece of food.
 - Press Enter to restart the game when the current game ends.
 
 ## Demo
