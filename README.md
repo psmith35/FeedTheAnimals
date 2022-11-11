@@ -16,7 +16,7 @@ Feed The Animals is a fun 1-player video game that requires players to earn poin
 
 **Languages:** C#
 
-**Software:** Unity, Git
+**Software:** Unity (2019.4.11+), Git
 
 ## Controls
 
